@@ -1,6 +1,17 @@
 import { HungryBear } from './../js/hungrybear.js';
 
 $(document).ready(function(){
+  $( function() {
+    $( ".draggable" ).draggable();
+    $( "#droppable" ).droppable({
+     drop: function( event, ui ) {
+       $( this )
+         .addClass( "ui-state-highlight" )
+         .find( "p" )
+           .html( "Dropped!" );
+     }
+   });
+  } );
 
   $("#lose").hide();
   let whatever = new HungryBear();
@@ -10,7 +21,7 @@ $(document).ready(function(){
   //check and display time every second!
   setInterval(function(){
   $('#outcome').text(whatever.foodLevel);
-  if (whatever.foodLevel <= 0){alert("foodlevelworking");
+  if (whatever.foodLevel <= 0){console.log("FoodLevelWorking");
     if (whatever.foodLevel <= 0){clearInterval();}}
   }, 1000);
 
