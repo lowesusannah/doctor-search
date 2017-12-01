@@ -1,4 +1,4 @@
-export class HungryBear {
+export class doctorSearch {
 
   constructor(name) {
     this.name = name;

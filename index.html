@@ -10,39 +10,21 @@
     <title>Hungry Bear</title>
   </head>
   <body>
-    <div id="hungry-bear-container">
-      <div id="hungry-bear">
-        <div id="hunger-level">
-          <h1>Hunger: <span id="outcome"></span></h1>
-        </div>
-        <div id="droppable" class="ui-widget-header"> <!--Target -hungry bear's mouth-->
-            <p>Drop here</p>
-        </div>
-      </div>
 
-      <div class="the-draggables">
-        <!-- Small items -->
-        <div id="blueberries" class="draggable" class="ui-widget-content"></div>
-        <div id="fish" class="draggable" class="ui-widget-content"></div>
-        <div id="leaves" class="draggable" class="ui-widget-content"></div>
-        <!-- Medium items -->
-        <div id="honey" class="draggable" class="ui-widget-content"></div>
-        <div id="raccoon" class="draggable" class="ui-widget-content"></div>
-        <div id="owl" class="draggable" class="ui-widget-content"></div>
-        <!-- Big items -->
-        <div id="mountainLion" class="draggable" class="ui-widget-content"></div>
-        <div id="flatTire" class="draggable" class="ui-widget-content"></div>
-        <div id="deer" class="draggable" class="ui-widget-content"></div>
-        <!-- human item -->
-        <div id="human" class="draggable" class="ui-widget-content"></div>
-        <!-- doughnut item -->
-        <div id="chocolateD" class="draggable" class="ui-widget-content"></div>
-      </div> <!--TheDraggables closing div-->
-  </div> <!-- Hungry Bear container closing div-->
-    <br>
+  <!--Input search terms -->
+  <div id="input">
+    <h1>Healthcare you can trust</h1>
+    <h3>Find providers by specialty or name in the Portland Area: </h3>
+    <form action="index.html" method="post">
+      <input id="search-string-input" type="text" name="search">Enter Search Terms Here (doctor's name, speciality, etc.)</input>
+      <button type="submit" name="button">Search</button>
+    </form>
+  </div>
 
-    <div id="lose">
-      <h1>The bear ate you. You lose!</h1>
-    </div>
+  <!--Search result -->
+  <div id="output">
+    <h1>Your Results: <span id="outcome"></span></h1>
+  </div>
+
   </body>
 </html>
