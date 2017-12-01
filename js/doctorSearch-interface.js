@@ -15,22 +15,21 @@ $(document).ready(function(){
     $("#input").hide();
     $("#output").show();
 
+    const getElements = function(response) {
+      $('#outcome').text(`${response.data.practices.name}`);
+      // $('#outcome').text(`${response.data.practices.name}`);
+    };
     request.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
         let response = JSON.parse(this.responseText);
         getElements(response);
       }
-    }
+    };
 
 
     request.open("GET", url, true);
     request.send();
 
-    getElements = function(response) {
-      alert("got to get Elements");
-      alert("this.responseText");
-      // $('#outcome').text(`${response.data.practices.name}`);
-    }
 
     // $('#outcome').text(results.responses());
     // $("#outcome").text(inputString);
