@@ -7,7 +7,7 @@
     <script type="text/javascript" src="build/js/app.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>Hungry Bear</title>
+    <title>Doctor Search</title>
   </head>
   <body>
 
@@ -17,14 +17,14 @@
     <h3>Find providers by specialty or name in the Portland Area: </h3>
     <form action="index.html" method="post">
       <input id="search-string-input" type="text" name="search">Enter Search Terms Here (doctor's name, speciality, etc.)</input>
-      <button type="submit" name="button">Search</button>
+      <button id="submit" type="submit" name="button">Search</button>
     </form>
   </div>
 
   <!--Search result -->
   <div id="output">
-    <h1>Your Results: <span id="outcome"></span></h1>
+    <h1>Your Results:</h1>
+      <h3><span id="outcome"></span></h3>
   </div>
-
   </body>
 </html>

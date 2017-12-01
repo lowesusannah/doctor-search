@@ -2,14 +2,17 @@ var apiKey = require('./../.env').apiKey;
 
 
 import { DoctorSearch } from './../js/doctorSearch.js';
-
 $(document).ready(function(){
+  $("#output").hide();
   $('#submit').click(function(){
     event.preventDefault();
     $("#input").hide();
-    let results = new doctorSearch $('#search-string-input');
-    results.responses();
-    $('#outcome').text(results.responses());
+    $("#output").show();
+    let inputString = $('#search-string-input').val();
+    $("#outcome").text(inputString);
+    // let results = new DoctorSearch(inputString);
+    // results.responses();
+    // $('#outcome').text(results.responses());
   });
 });
 
