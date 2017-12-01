@@ -10,10 +10,7 @@ $(document).ready(function(){
     // let results = new DoctorSearch(inputString);
     // function -- if this.responseText - parsed into words (split(' ')).contains `${inputString}` then return/append item to list. Do a for loop through items and append each result name, address and website if responseText .contains the input string word;
     let request = new XMLHttpRequest();
-    let url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${inputString}&location=or-portland&user_location=45.523%2C122.676&sort=rating-desc&skip=0&limit=25&user_key=${apiKey}`;
-
-    alert(url);
-
+    let url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${inputString}&location=or-portland&user_location=45.523%2C122.676&skip=0&limit=10&user_key=${apiKey}`;
 
     $("#input").hide();
     $("#output").show();
