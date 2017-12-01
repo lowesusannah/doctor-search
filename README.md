@@ -33,9 +33,10 @@ _This application takes a user's input search of a medical specialty or Dr. name
 ## Specifications
 
 | Spec        | Example Input           | Example Output  |
-| ------------- |:-------------:| -----:|
-| ------------- |:-------------:| -----:|
-| ------------- |:-------------:| -----:|
+| When user enters a name, app returns a list of doctors in Portland that meet that search criteria | Search query: "John" | Return: list of doctors who are in Portland whose data contains "john" |
+| When user enters a medical issue/specialty, app returns a list of doctors in Portland that meet that search criteria |Search query: "Orthopedic"| Return: list of doctors who specialize in orthopedic medicine |
+| If API call fails, error message is displayed | API call returns a status of failed (i.e. does not have a status of 200 OK)|
+| If user enters a search query that does not return any results, a "no results found" message will display | Enter: "Orthapedic" (mis-spelling of orthopedic") | Result: "No matches found, please check your spelling or try a less specific search" |
 =======
 
 
