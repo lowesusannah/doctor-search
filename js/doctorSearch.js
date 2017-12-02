@@ -4,11 +4,11 @@ export class doctorSearch {
     this.inputString = inputString;
   }
 
-  returnResults() {
-    if (this.body.main.meta.total === 0) {
-      return false;
-    } else {
-      return true;
-    }
-  }
+  // returnResults(inputString) {
+  //   if (this.body.main.meta.total === 0) {
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // }
 }
