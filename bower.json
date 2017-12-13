@@ -3,7 +3,7 @@
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/lowesusannah/doctor-search",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,5 +15,8 @@
     "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
     "moment": "^2.19.2"
-  }
+  },
+  "authors": [
+    "Susannah Lowe <lowesusannah@gmail.com>"
+  ]
 }
