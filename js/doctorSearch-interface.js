@@ -9,8 +9,10 @@ $(document).ready(function(){
   $("#output").hide();
   $('#submit').click(function(){
     event.preventDefault();
-    $("#input").hide();
+
+    // $("#input").hide();
     $('#output').show();
+
     let inputString = $('#search-string-input').val();
     let doctorSearch = new DoctorSearch(inputString);
     doctorSearch.getData(displayData);
