@@ -1,20 +1,18 @@
-import { DoctorSearch } from './../js/doctorSearch.js';
+import { DoctorSearch } from './../doctorSearch.js';
 
 let displayData = function(results) {
-    $('#output').append('<p>' + results + '</p>');
+    results.forEach(function(result) {
+      $('#output').append('<p>' + results + '</p>');
+    });
 };
 
-
 $(document).ready(function(){
-  $("#output").hide();
+  $('#output').hide();
   $('#submit').click(function(){
     event.preventDefault();
-
-    // $("#input").hide();
-    $('#output').show();
-
     let inputString = $('#search-string-input').val();
     let doctorSearch = new DoctorSearch(inputString);
+    $('#output').show();
     doctorSearch.getData(displayData);
   });
 });
