@@ -1,9 +1,9 @@
-import { DoctorSearch } from './../doctorSearch.js';
+import { DoctorSearch } from './../js/doctorSearch.js';
 
-let displayData = function(results) {
-    results.forEach(function(result) {
-      $('#output').append('<p>' + results + '</p>');
-    });
+ let displayData = function(results) {
+  results.forEach(function(result) {
+    $('#output').append('<p>' + results + '</p>');
+  });
 };
 
 $(document).ready(function(){
@@ -13,6 +13,6 @@ $(document).ready(function(){
     let inputString = $('#search-string-input').val();
     let doctorSearch = new DoctorSearch(inputString);
     $('#output').show();
-    doctorSearch.getData(displayData);
+    doctorSearch.getData(inputString, displayData);
   });
 });
