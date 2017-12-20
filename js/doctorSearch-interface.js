@@ -1,8 +1,8 @@
 import { DoctorSearch } from './../js/doctorSearch.js';
 
- let displayData = function(results) {
-  results.forEach(function(result) {
-    $('#output').append('<p>' + results + '</p>');
+let displayData = function(response) {
+  results.forEach(function(response) {
+    $('#output').append('<p>' + response + '</p>');
   });
 };
 

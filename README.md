@@ -17,17 +17,20 @@ _This application takes a user's input search of a medical specialty or Dr. name
 
   ### Installation Instructions:
     1. Clone project from GitHub repository, by copying and pasting the url of this GitHub repository following the $git clone command into your favorite command line program, such as Terminal on Mac.  
-        - For example, $git clone https://github.com/nameOfUrl
+        - For this project, $git clone https://github.com/lowesusannah/doctor-search.git
 
     2. In the command line run the following commands at the root level of your cloned repository folder:
         - $npm install
         - $bower install
         - $gulp build
-        - $gulp watch (to preview live server updates)
+        - $gulp serve (to preview live server updates)
 
     3. It's recommended, but not required to test your API call in a API test, such as Postman.
 
-    4. If needed, ready for production by running command $gulp build --production.
+    4. Create a .env file in the root-level directory to hold your own API key. If you need a key, you may sign up to get one here: https://developer.betterdoctor.com/. Once you have your API key, place it in the .env file like so: 
+        exports.apiKey = "api-key-should-go-here-in-these-double-quotes";
+
+    5. If needed, ready for production by running command $gulp build --production.
 
 
 ## Specifications
