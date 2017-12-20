@@ -1,9 +1,11 @@
 import { DoctorSearch } from './../js/doctorSearch.js';
 
-let displayData = function(response) {
-  results.forEach(function(response) {
-    $('#output').append('<p>' + response + '</p>');
-  });
+let displayData = function(body) {
+  // console.log(body.data.practices);
+
+  // results.forEach(function(body) {
+    // $('#output').text(`The doctor name is ${body.data.practice.name}`);
+  // });
 };
 
 $(document).ready(function(){

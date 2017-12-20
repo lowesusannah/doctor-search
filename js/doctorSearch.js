@@ -23,13 +23,13 @@ export class DoctorSearch {
       console.log("request opened");
     });
 
-      promise.then(function(response) {
-        console.log("response: " + response );
-        let body = JSON.parse(response);
-        console.log("body: " + body);
-        return (body);
-      }, function(error) {
-        return (`There was an error processing your request`);
-      });
-    }
-};
+    promise.then(function(response) {
+      let body = JSON.parse(response);
+      return (body.data.practices);
+      console.log(body.data.practices);
+
+    }, function(error) {
+      return (`There was an error processing your request`);
+    });
+  }
+}
